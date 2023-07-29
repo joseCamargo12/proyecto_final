@@ -250,4 +250,14 @@ form {
     padding: 5rem 0;
 }
 
+.boton {
+    background-color: black;
+    color: white;
+  }
+
+.boton:hover {
+    background-color: white;
+    color: black;
+  }
+
 
