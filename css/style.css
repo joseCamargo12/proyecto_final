@@ -222,6 +222,14 @@ body {
 }
 
 /* CONTACTO */
+
+form {
+    background-color: gray;
+    border-radius: 6px;
+    padding: 40px;
+    text-decoration: none;
+    width: 60%;
+}
 .form {
     display: flex;
     justify-content: center;
@@ -236,40 +244,10 @@ body {
     font-size: 30px;
 }
 
-.form input {
-    border-radius: 5%;
-    font-size: x-large;
+.terminos {
+    margin-top: 150px;
+    background-color: gray;
+    padding: 5rem 0;
 }
 
-.form label {
-    font-size: x-large;
 
-}
-
-#textArea {
-    border-radius: 5%;
-    font-size: x-large;
-}
-
-.form h4 {
-    font-size: x-large;
-}
-
-.form div {
-    font-size: x-large;
-}
-
-.form select {
-    font-size: x-large;
-    border-radius: 5px;
-}
-
-.button {
-    color: #fff;
-    background-color: black;
-    font-size: large;
-    width: 123px;
-    height: 35px;
-    margin-top: 25px;
-    border-radius: 9px;
-}
