@@ -17,8 +17,8 @@
 
 <body class="container-fluid">
     <!-- Encabezado -->
-    <header class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <header class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+        <div class="container-fluid px-4 px-lg-5">
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="../img/favicon.png" alt="logo Empresa">
             </a>
@@ -26,7 +26,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse navBar" id="navbarNav">
                 <ul class="navbar-nav ms-auto fuentes">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -50,16 +50,88 @@
 
     <!-- Contenido -->
     <main>
-        <div class="equipo">
-            <h1>Nuestro Equipo</h1>
-            <ul>
-                <li>General Manager: Ing. Camilo Camargo</li>
-                <li>Ingeniero de Producción: Ing. Sergio Bautista</li>
-                <li>Administradora de Empresas: Francy Pantoja</li>
-                <li>Ingeniero Industrial: Ing. Luis Blanco</li>
-                <li>Ingeniera Ambiental, Esp. en Higiene Industrial: Ing. Milena Diaz</li>
-            </ul>
-        </div>
+
+        <section class="page-section about" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0">Nuestra Historia</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4">En 2018, se fundó Estrategia Empresarial, una empresa de consultoría especializada en seguridad y salud laboral, normas ISO, BASC, OEA y mediciones ambientales. Dirigida por el ingeniero Camilo Camargo, se destacaron en ofrecer soluciones integrales a empresas internacionales como Joyería Bauer, Wagnerlatam y Solcrom. Su equipo de expertos en diferentes áreas les permitió establecerse como líderes en el sector, brindando servicios personalizados y de calidad. Con un enfoque en el presente y el futuro, continúan creciendo y expandiéndose para seguir contribuyendo al crecimiento sostenible de sus clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid equipo">
+
+            <hr class="featurette-divider">
+            <!-- Primer bloque de contenido -->
+            <div class="row featurette align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">General Manager: </h2>
+                    <p class="lead">Ing. Camilo Camargo</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/silueta.jpg" alt="Imagen" width="200" height="300">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Segundo bloque de contenido -->
+            <div class="row featurette align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Ingeniero de Producción: </h2>
+                    <p class="lead">Ing. Sergio Bautista</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/silueta.jpg" alt="Imagen" width="200" height="300">
+                </div>
+            </div>
+
+
+            <hr class="featurette-divider">
+
+            <!-- Tercer bloque de contenido -->
+            <div class="row featurette align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Ingeniero Industrial: </h2>
+                    <p class="lead">Ing. Luis Blanco</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/silueta.jpg" alt="Imagen" width="200" height="300">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Cuarto bloque de contenido -->
+            <div class="row featurette align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Ingeniera Ambiental, Esp. en Higiene Industrial: </h2>
+                    <p class="lead">Ing. Milena Diaz</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/silueta.jpg" alt="Imagen" width="200" height="300">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- Quinto bloque de contenido -->
+            <div class="row featurette align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Administradora de Empresas: </h2>
+                    <p class="lead">Francy Pantoja</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../img/silueta.jpg" alt="Imagen" width="200" height="300">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+        </section>
     </main>
 
     <!-- Pie de pagina -->
@@ -77,6 +149,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            document.body.classList.toggle('scrolled', window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>

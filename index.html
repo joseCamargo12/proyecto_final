@@ -17,8 +17,8 @@
 
 <body class="container-fluid">
     <!-- Encabezado -->
-    <header class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <header class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="img/favicon.png" alt="logo Empresa">
             </a>
@@ -26,7 +26,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse navBar" id="navbarNav">
                 <ul class="navbar-nav ms-auto fuentes">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
@@ -59,7 +59,9 @@
                 tus empleados y alcanza estándares de excelencia internacional! ¡Únete a nuestro equipo de clientes
                 satisfechos como Joyería Bauer, Wagnerlatam y Solcrom! ¡Actúa hoy y lleva tu negocio al siguiente nivel!
             </h1>
-            <a href="pages/contacto.html" class="accion">Cotizar</a>
+            <hr class="divider">
+            <a class="btn btn-xl accion" href="pages/contacto.html">Cotizar</a>
+            <!-- <a href="pages/contacto.html" class="accion">Cotizar</a> -->
         </div>
     </main>
 
@@ -78,6 +80,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+        document.body.classList.toggle('scrolled', window.scrollY > 0);
+    });
+    </script>
 </body>
 
 </html>
