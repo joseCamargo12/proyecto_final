@@ -190,6 +190,13 @@ body {
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 500px) {
+    .about p {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
 /* ******************************************************* */
 
 /* PORTAFOLIO */
