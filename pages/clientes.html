@@ -48,19 +48,45 @@
         </div>
     </header>
     <!-- Contenido -->
-    <main>
-        <section class="clientes">
-            <div>
-                <h1>Experiencia con Clientes Internacionales</h1>
-                <h2>Hemos trabajado con clientes internacionales, entre ellos:</h2>
+    <main class="container-fluid">
 
-                <article>
-                    <ul>
-                        <li>Joyería Bauer Multinacional</li>
-                        <li>WagnerLATAM</li>
-                        <li>Solcrom Colombia</li>
-                    </ul>
-                </article>
+        <section class="container py-5 clientes">
+            <div class="row text-center pt-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Nuestros clientes y aliados</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <img src="../img/cliente1.jpg" class="imagen-cliente">
+                    <h5 class="text-center mt-3 mb-3">Joyería Bauer Multinacional</h5>
+                    <p class="text-center"><a class="btn"  href="https://bauer.com.co/" target="_blank">Mas informacion</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <img src="../img/cliente2.jpg" class="imagen-cliente">
+                    <h2 class="h5 text-center mt-3 mb-3">Wagner LATAM</h2>
+                    <p class="text-center"><a class="btn" href="https://wagnerlatam.co/tienda/" target="_blank">Mas informacion</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <img src="../img/cliente3.jpg" class="imagen-cliente">
+                    <h2 class="h5 text-center mt-3 mb-3">Transportes R&R</h2>
+                    <p class="text-center"><a class="btn" href="https://www.transporteryr.com/" target="_blank">Mas informacion</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <img src="../img/cliente4.jpg" class="imagen-cliente">
+                    <h2 class="h5 text-center mt-3 mb-3">Ten Lifestyle Group</h2>
+                    <p class="text-center"><a class="btn" href="https://tenlifestylegroup.com/" target="_blank">Mas informacion</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <img src="../img/cliente5.jpg" class="imagen-cliente">
+                    <h2 class="h5 text-center mt-3 mb-3">Rolex</h2>
+                    <p class="text-center"><a class="btn" href="https://www.rolex.com/es" target="_blank">Mas informacion</a></p>
+                </div>
+                <div class="col-12 col-md-4 p-5 mt-3">
+                    <img src="../img/cliente6.jpg" class="imagen-cliente">
+                    <h2 class="h5 text-center mt-3 mb-3">Espumas Santafé</h2>
+                    <p class="text-center"><a class="btn" href="https://espumassantafe.com/" target="_blank">Mas informacion</a></p>
+                </div>
             </div>
         </section>
     </main>
@@ -68,10 +94,10 @@
     <!-- Pie de pagina -->
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center pb-3 mb-3 redes">
-            <a href="https://facebook.com"><img src="../img/facebook.png" alt="Facebook"></a>
-            <a href="https://twitter.com"><img src="../img/twitter.png" alt="Twitter"></a>
-            <a href="https://instagram.com"><img src="../img/instagran.png" alt="Instagram"></a>
-            <a href="https://goo.gl/maps/91dKVRDJmDGEYQtCA"><img src="../img/mapa.png" alt="ubicacion"></a>
+            <a href="https://facebook.com"><img src="../img/facebook.png" alt="imagen de Facebook"></a>
+            <a href="https://twitter.com"><img src="../img/twitter.png" alt="imagen de Twitter"></a>
+            <a href="https://instagram.com"><img src="../img/instagran.png" alt="imagen de Instagram"></a>
+            <a href="https://goo.gl/maps/91dKVRDJmDGEYQtCA"><img src="../img/mapa.png" alt="imagen de ubicacion"></a>
         </ul>
         <p class="text-center derechos">&copy; Todos los derechos reservados | 2023 | Hecho por: JPCOMPANY
         </p>
@@ -80,6 +106,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+        <script>
+            window.addEventListener('scroll', function () {
+                document.body.classList.toggle('scrolled', window.scrollY > 0);
+            });
+        </script>
 </body>
 
 </html>

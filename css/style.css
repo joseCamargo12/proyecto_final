@@ -9,34 +9,28 @@
 }
 
 body {
-    background: url(../img/fondo.jpg) no-repeat;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url(../img/fondo2.jpg) no-repeat;
     background-size: cover;
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    :root {
-        scroll-behavior: smooth;
-    }
 }
 
 /* Barra de navegacion */
 
 .navbar {
-    background-color: transparent; /* Cambia el color de fondo a tu preferencia */
-    transition: background-color 0.3s; /* Agregamos transición para una animación suave */
+    background-color: transparent;
+    transition: background-color 0.3s;
 }
 
 /* Estilo para el nav cuando se hace scroll */
 @media screen and (min-width: 300px) {
     body.scrolled .navbar {
-        background-color: rgb(133, 133, 133); /* Cambia el color de fondo a tu preferencia */
+        background-color: rgb(133, 133, 133);
     }
 }
 
 .fuentes {
     font-size: 18px;
-    text-transform: uppercase;
+
 }
 
 .fuentes li a:hover {
@@ -62,9 +56,13 @@ body {
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
 
     }
+
+    .navbar a {
+        color: #fff;
+    }
 }
 
-  
+
 /* LOGO */
 
 .logo {
@@ -90,7 +88,7 @@ body {
 }
 
 .derechos {
-    color: black;
+    color: white;
 }
 
 /* INDEX */
@@ -107,12 +105,12 @@ body {
 .encabezado h1 {
     font-size: 2rem;
     width: 70%;
-    margin-top: -10vh;
+    margin-top: 3rem;
     text-align: center;
 }
 
 .accion {
-    box-shadow: 10px 10px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 9px rgb(83, 75, 75);
     background-color: black;
     font-size: 1.2em;
     text-decoration: none;
@@ -155,22 +153,41 @@ body {
         margin-top: 5%;
     }
 }
+
 /* ******************************************************* */
 /* NOSOTROS */
 .about {
     margin-top: 150px;
     background-color: gray;
-    padding: 8rem 0;
+    padding: 8rem;
 }
 
 .equipo {
-    margin-bottom: 100px;
-    width: 40%;
-    color: #fff;
+    color: white;
+    border-radius: 9px;
 }
 
-.equipo img {
-    border-radius: 6px;
+.equipo p {
+    color: black;
+
+}
+
+.team-member {
+
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.team-member img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.1);
+}
+
+.team-member h4,
+.team-member .h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
 }
 
 /* ******************************************************* */
@@ -180,45 +197,45 @@ body {
 .portafilio {
     margin-top: 150px;
     background-color: gray;
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
- .name {
+.name {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-} 
+}
+
+.portafilio img {
+    width: 60%;
+    border-radius: 3px;
+}
 
 /* CLIENTES */
 
 .clientes {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    flex-direction: column;
-    font-size: x-large;
-    height: 100vh;
+    color: black;
+    margin-top: 4rem;
 }
 
-.clientes div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: x-large;
-    height: 100vh;
-    width: 60%;
-    margin-right: 120px;
+.clientes a {
+    background-color: gray;
+    color: black;
 }
 
-.clientes h1 {
-    line-height: 2;
+.clientes a:hover {
+    background-color: black;
+    color: #fff;
 }
 
-
-.clientes h2 {
-    line-height: 2;
+.imagen-cliente {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 20px;
 }
 
 /* CONTACTO */
@@ -228,8 +245,9 @@ form {
     border-radius: 6px;
     padding: 40px;
     text-decoration: none;
-    width: 60%;
+    width: 80%;
 }
+
 .form {
     display: flex;
     justify-content: center;
@@ -238,9 +256,9 @@ form {
 }
 
 .form h1 {
+    color: black;
     margin-top: 145px;
-    margin-left: -33px;
-    margin-bottom: 20px;
+    text-align: center;
     font-size: 30px;
 }
 
@@ -253,11 +271,28 @@ form {
 .boton {
     background-color: black;
     color: white;
-  }
+}
 
 .boton:hover {
     background-color: white;
     color: black;
-  }
+}
 
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contacto h1 {
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 7rem;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .contacto h1 {
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 7rem;
+    }
+}
