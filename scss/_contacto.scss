@@ -1,0 +1,75 @@
+.Contacto {
+    background:
+        url(../img/casco.jpg) no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+h1 {
+    color: $text-color;
+    margin-top: 145px;
+    text-align: center;
+    font-size: 30px;
+}
+
+form {
+    width: 100%;
+    background-color: $background-color;
+    border-radius: 6px;
+    padding: 40px;
+    text-decoration: none;
+
+    .form {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .terminos {
+        margin-top: $section-margin-top;
+        background-color: $background-color;
+        padding: 5rem 0;
+    }
+
+    .boton {
+        background-color: black;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        form {
+            width: 60%;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .contacto h1 {
+            color: #fff;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 7rem;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .contacto h1 {
+            color: #fff;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 7rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .contacto form {
+        max-width: 600px; 
+        margin: 0 auto;
+    }
+}

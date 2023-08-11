@@ -1,0 +1,57 @@
+.encabezado {
+    margin-top: 2rem;
+    padding: 4rem;
+}
+
+.accion {
+    box-shadow: 10px 10px 9px rgb(83, 75, 75);
+    background-color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        opacity: 80%;
+        background-color: #fff;
+        color: black;
+    }
+}
+
+.cotizar {
+    background:linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
+    url(../img/carrusel2.png) no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+
+
+.carrusel h3 {
+   
+        margin-top: 1600px;
+}
+
+.masServicios {
+    margin-top: 1rem;
+    background-color: black;
+    padding: 1rem; 
+    .cartaUno {
+        h2 {
+            margin-top: 100px;
+        }
+    }
+
+    .botonServices {
+        background-color: black;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            background-color: gray;
+            color: black;
+        }
+    }
+    
+}
+
