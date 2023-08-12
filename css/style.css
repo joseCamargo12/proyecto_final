@@ -1,4 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Belanosima", sans-serif;
+}
+
+.container-fluid {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(126, 125, 125, 0.75);
+}
+
+.navbar {
+  background-color: rgba(143, 142, 142, 0.75);
+  transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 50px) {
+  body.scrolled .navbar {
+    background-color: gray;
+  }
+}
+.fuentes {
+  font-size: 18px;
+}
+.fuentes li a:hover {
+  border-radius: 3px;
+  color: #fff;
+  background: black;
+}
+.fuentes a {
+  color: black;
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 550px) {
+  .navBar {
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    border-radius: 7px;
+    padding: 2rem;
+  }
+  .navBar a {
+    color: black;
+  }
+}
+.logo {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
+
+.logoDos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logoDos img {
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+  margin-left: -1.6rem;
+}
+
+.redes img {
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 30px;
+  border-radius: 7px;
+  width: 30px;
+  height: 30px;
+}
+.redes img:hover {
+  background: white;
+  height: 40px;
+  width: 40px;
+  transition: all 0.2s;
+}
+
+.derechos {
+  color: black;
+}
+
+.about {
+  margin-top: 80px;
+  background-color: gray;
+  padding: 8rem;
+}
+
 .encabezado {
   margin-top: 2rem;
   padding: 4rem;
@@ -23,10 +119,6 @@
   padding: 2rem;
 }
 
-.carrusel h3 {
-  margin-top: 1600px;
-}
-
 .masServicios {
   margin-top: 1rem;
   background-color: black;
@@ -46,6 +138,22 @@
   color: black;
 }
 
+.carrusel {
+  transition: all 1s;
+}
+.carrusel span:hover {
+  height: 60px;
+  width: 60px;
+}
+
+@media (max-width: 768px) {
+  .carrusel {
+    margin-top: 77px;
+  }
+  .carrusel img {
+    height: 180px;
+  }
+}
 .nosotros {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/equipo.jpg) no-repeat;
   background-size: cover;
@@ -189,103 +297,15 @@ form .boton:hover {
 
 @media (min-width: 992px) {
   .contacto form {
-    max-width: 600px;
+    max-width: 50%;
     margin: 0 auto;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Belanosima", sans-serif;
-}
-
-.container-fluid {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: rgba(126, 125, 125, 0.75);
-}
-
-.navbar {
-  background-color: rgba(143, 142, 142, 0.75);
-  transition: background-color 0.3s;
-}
-
-/*@media screen and (min-width: 300px) {
-    body.scrolled .navbar {
-        background-color: gray;
-    }
-
-}*/
-.fuentes {
-  font-size: 18px;
-}
-.fuentes li a:hover {
-  border-radius: 3px;
-  color: #fff;
-  background: black;
-  transition: 0.5s;
-}
-.fuentes a {
-  color: black;
-}
-
-@media screen and (max-width: 550px) {
-  .navBar {
-    gap: 1rem;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: gray;
-    border-radius: 7px;
-    padding: 2rem;
+@media (max-width: 992px) {
+  .contacto form {
+    max-width: 95%;
+    margin: 0 auto;
   }
-  .navBar a {
-    color: black;
-  }
-}
-.logo {
-  cursor: pointer;
-  width: 35px;
-  height: 35px;
-}
-
-.logoDos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.logoDos img {
-  cursor: pointer;
-  width: 110px;
-  height: 110px;
-  margin-left: -1.6rem;
-}
-
-.redes img {
-  padding: 3px;
-  border-radius: 3px;
-  margin-right: 30px;
-  border-radius: 7px;
-  width: 30px;
-  height: 30px;
-}
-.redes img:hover {
-  background: white;
-  transition: 0.5s;
-}
-
-.derechos {
-  color: black;
-}
-
-.about {
-  margin-top: 80px;
-  background-color: gray;
-  padding: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

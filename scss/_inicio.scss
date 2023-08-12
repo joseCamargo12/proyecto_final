@@ -24,13 +24,6 @@
     padding: 2rem;
 }
 
-
-
-.carrusel h3 {
-   
-        margin-top: 1600px;
-}
-
 .masServicios {
     margin-top: 1rem;
     background-color: black;
@@ -55,3 +48,20 @@
     
 }
 
+.carrusel {
+    transition: all 1s;
+    
+    span:hover {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .carrusel {
+        margin-top: 77px;
+    }
+    .carrusel img {
+        height: 180px;
+    }
+}
