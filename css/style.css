@@ -20,6 +20,7 @@ body {
   transition: background-color 0.3s;
 }
 
+/*Media para estilizar la barra cuando se hace scroll down*/
 @media screen and (min-width: 50px) {
   body.scrolled .navbar {
     background-color: gray;
@@ -38,6 +39,7 @@ body {
   transition: all 0.5s;
 }
 
+/*Media para estilizar el menu hamburguesa*/
 @media screen and (max-width: 550px) {
   .navBar {
     gap: 1rem;
@@ -52,6 +54,7 @@ body {
     color: black;
   }
 }
+/*Estilizacion logos*/
 .logo {
   cursor: pointer;
   width: 35px;
@@ -59,6 +62,7 @@ body {
 }
 
 .logoDos {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +74,7 @@ body {
   margin-left: -1.6rem;
 }
 
+/*Estilizacion logos de redes*/
 .redes img {
   padding: 3px;
   border-radius: 3px;
@@ -100,19 +105,56 @@ body {
   padding: 4rem;
 }
 
-.accion {
-  box-shadow: 10px 10px 9px rgb(83, 75, 75);
+/*Perzonalizacion para los a*/
+.accionUno, .accionDos {
   background-color: black;
+  border: none;
   font-size: 1.2em;
   text-decoration: none;
   color: #fff;
+  font-size: 24px;
+  position: relative;
+  border-radius: 8px;
 }
-.accion:hover {
+.accionUno:hover, .accionDos:hover {
   opacity: 80%;
-  background-color: #fff;
+  background-color: white;
   color: black;
+  z-index: 1;
 }
 
+.accionUno::before, .accionDos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, white, blue, white, white, blue, white);
+  background-size: 800%;
+  border-radius: 10px;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*ESTEND del boton numero 1*/
+.accionDos {
+  font-size: 20px;
+}
+
+/*banner final de modulo cotizacion en desarrollo*/
 .cotizar {
   background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../img/carrusel2.png) no-repeat;
   background-size: cover;
@@ -138,12 +180,17 @@ body {
   color: black;
 }
 
+/*Animacion flecha carrusel*/
 .carrusel {
   transition: all 1s;
 }
 .carrusel span:hover {
   height: 60px;
   width: 60px;
+}
+.carrusel img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 768px) {
@@ -169,9 +216,13 @@ body {
   margin-bottom: 150px;
 }
 
+/*Estilo para los mienbros del equipo*/
 .equipo {
   border-radius: 9px;
   margin-top: -6rem;
+}
+.equipo h3 {
+  margin-top: 100px;
 }
 
 .team-member {
@@ -264,6 +315,10 @@ form .terminos {
   background-color: gray;
   padding: 5rem 0;
 }
+form .checkTerminos a {
+  text-decoration: none;
+  color: black;
+}
 form .boton {
   background-color: black;
   color: white;
@@ -306,6 +361,9 @@ form .boton:hover {
     max-width: 95%;
     margin: 0 auto;
   }
+}
+.terminos {
+  margin-top: 6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

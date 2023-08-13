@@ -1,13 +1,21 @@
-* {
+@mixin general {
     margin: 0;
     padding: 0;
     font-family: $font-family;
 }
 
-.container-fluid {
+@mixin contenedorSinBordes {
     border: none;
     padding: 0;
     margin: 0;
+}
+
+* {
+    @include general;
+}
+
+.container-fluid {
+    @include contenedorSinBordes;
 }
 
 body {
@@ -19,6 +27,7 @@ body {
     transition: background-color 0.3s;
 }
 
+/*Media para estilizar la barra cuando se hace scroll down*/
 @media screen and (min-width: 50px) {
     body.scrolled .navbar {
         background-color: gray;
@@ -33,7 +42,7 @@ body {
         border-radius: 3px;
         color: #fff;
         background: $hover-color;
-        
+
     }
 
     a {
@@ -42,6 +51,7 @@ body {
     }
 }
 
+/*Media para estilizar el menu hamburguesa*/
 @media screen and (max-width: 550px) {
     .navBar {
         gap: 1rem;
@@ -58,6 +68,7 @@ body {
     }
 }
 
+/*Estilizacion logos*/
 .logo {
     cursor: pointer;
     width: $logo-size;
@@ -65,6 +76,7 @@ body {
 }
 
 .logoDos {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +88,8 @@ body {
         margin-left: -1.6rem;
     }
 }
+
+/*Estilizacion logos de redes*/
 
 .redes img {
     padding: 3px;

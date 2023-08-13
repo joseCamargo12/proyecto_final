@@ -3,23 +3,64 @@
     padding: 4rem;
 }
 
-.accion {
-    box-shadow: 10px 10px 9px rgb(83, 75, 75);
+/*Perzonalizacion para los a*/
+.accionUno {
     background-color: black;
+    border: none;
     font-size: 1.2em;
     text-decoration: none;
     color: #fff;
+    font-size: 24px;
+    position: relative;
+    border-radius: 8px;
 
     &:hover {
         opacity: 80%;
-        background-color: #fff;
+        background-color: white;
         color: black;
+        z-index: 1;
     }
 }
 
+.accionUno::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, white, blue, white, white, blue, white);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/*ESTEND del boton numero 1*/
+.accionDos {
+    @extend .accionUno;
+    font-size: 20px;
+}
+
+/*banner final de modulo cotizacion en desarrollo*/
 .cotizar {
-    background:linear-gradient(rgba(5, 7, 12, 0.40), rgba(5, 7, 12, 0.40)),
-    url(../img/carrusel2.png) no-repeat;
+    background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)),
+        url(../img/carrusel2.png) no-repeat;
     background-size: cover;
     padding: 2rem;
 }
@@ -27,7 +68,8 @@
 .masServicios {
     margin-top: 1rem;
     background-color: black;
-    padding: 1rem; 
+    padding: 1rem;
+
     .cartaUno {
         h2 {
             margin-top: 100px;
@@ -45,22 +87,29 @@
             color: black;
         }
     }
-    
 }
+
+/*Animacion flecha carrusel*/
 
 .carrusel {
     transition: all 1s;
-    
+
     span:hover {
         height: 60px;
         width: 60px;
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .carrusel {
         margin-top: 77px;
     }
+
     .carrusel img {
         height: 180px;
     }
