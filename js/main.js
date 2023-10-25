@@ -8,7 +8,26 @@ window.onload = function () {
 
 function vaciarResultados() {
   const resultados = document.querySelector("#resultadosTabla tbody");
-  resultados.innerHTML = ""; // Vacía el contenido de la tabla
+  Swal.fire({
+    title: 'Estas seguro de eliminar todo?',
+    text: "No sera posible reversar esta accion",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Si, eliminar todo'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire(
+        'Eliminado!',
+        'Tus resultados han sido eliminados',
+        'success'
+      );
+      resultados.innerHTML = "";
+    } else {
+      return resultados
+    }
+  });
 }
 
 function buscarConsultorias() {
@@ -59,6 +78,7 @@ function aplicarFiltro(auditoria) {
     (prioridad === '' || auditoria.prioridad.toString().includes(prioridad)) &&
     (clave === '' || auditoria.clave.toLowerCase().includes(clave))
   );
+  
 }
 
 function sincronizarStorage() {
@@ -71,3 +91,13 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 vaciarButton.addEventListener('click', vaciarResultados);
+buscar.addEventListener('click', ()=>{
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Busqueda realizada',
+    showConfirmButton: false,
+    timer: 1500
+  })
+});
+
