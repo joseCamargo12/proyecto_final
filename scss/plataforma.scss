@@ -1,0 +1,36 @@
+.buscadorTitulo {
+    margin-top: 5.5rem;
+    text-align: center;
+  }
+  
+  .formulario {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .buscador {
+    background-color: gray;
+    border-radius: 6px;
+    padding: 20px;
+    text-decoration: none;
+  
+    button {
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      border: solid black;
+  
+      &:hover {
+        background-color: white;
+        color: black;
+        border: solid white;
+      }
+    }
+  
+    input {
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+  }

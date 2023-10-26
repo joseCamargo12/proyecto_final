@@ -1,0 +1,186 @@
+// const auditorias = [
+//   {
+//     tipo: "Consultoria en Seguridad y Salud en el Trabajo",
+//     fecha: "2023-01-01",
+//     hora: "08:00",
+//     ubicacion: "Bogota",
+//     prioridad: 3,
+//     clave: "desarrollo"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 9001",
+//     fecha: "2023-02-15",
+//     hora: "14:30",
+//     ubicacion: "Medellin",
+//     prioridad: 1,
+//     clave: "innovacion"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 45001",
+//     fecha: "2023-03-10",
+//     hora: "10:15",
+//     ubicacion: "Cartagena",
+//     prioridad: 4,
+//     clave: "eficiencia"
+//   },
+//   {
+//     tipo: "Consultoria en Norma BASC (Alianza Empresarial para un Comercio Seguro)",
+//     fecha: "2023-04-20",
+//     hora: "09:45",
+//     ubicacion: "Bogota",
+//     prioridad: 2,
+//     clave: "calidad"
+//   },
+//   {
+//     tipo: "Consultoria OEA (Operador Economico Autorizado)",
+//     fecha: "2023-05-05",
+//     hora: "16:20",
+//     ubicacion: "Medellin",
+//     prioridad: 1,
+//     clave: "excelencia"
+//   },
+//   {
+//     tipo: "Mediciones Ambientales y Estudios de Tiempos y Movimientos",
+//     fecha: "2023-06-30",
+//     hora: "11:30",
+//     ubicacion: "Cartagena",
+//     prioridad: 3,
+//     clave: "crecimiento"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 14001",
+//     fecha: "2023-07-08",
+//     hora: "13:10",
+//     ubicacion: "Bogota",
+//     prioridad: 4,
+//     clave: "sostenibilidad"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 28000",
+//     fecha: "2023-08-14",
+//     hora: "10:00",
+//     ubicacion: "Medellin",
+//     prioridad: 2,
+//     clave: "efectividad"
+//   },
+//   {
+//     tipo: "Consultoria en Seguridad y Salud en el Trabajo",
+//     fecha: "2023-09-22",
+//     hora: "08:45",
+//     ubicacion: "Cartagena",
+//     prioridad: 3,
+//     clave: "seguridad"
+//   },
+//   {
+//     tipo: "Mediciones Ambientales y Estudios de Tiempos y Movimientos",
+//     fecha: "2023-10-05",
+//     hora: "09:30",
+//     ubicacion: "Bogota",
+//     prioridad: 1,
+//     clave: "medioambiente"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 9001",
+//     fecha: "2023-01-01",
+//     hora: "08:30",
+//     ubicacion: "Medellin",
+//     prioridad: 3,
+//     clave: "certificacion"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 45001",
+//     fecha: "2023-01-01",
+//     hora: "11:00",
+//     ubicacion: "Cartagena",
+//     prioridad: 4,
+//     clave: "gestion"
+//   },
+//   {
+//     tipo: "Consultoria OEA (Operador Economico Autorizado)",
+//     fecha: "2023-02-15",
+//     hora: "16:45",
+//     ubicacion: "Bogota",
+//     prioridad: 1,
+//     clave: "comercio"
+//   },
+//   {
+//     tipo: "Mediciones Ambientales y Estudios de Tiempos y Movimientos",
+//     fecha: "2023-02-15",
+//     hora: "17:30",
+//     ubicacion: "Medellin",
+//     prioridad: 2,
+//     clave: "tiempo"
+//   },
+//   {
+//     tipo: "Consultoria en Seguridad y Salud en el Trabajo",
+//     fecha: "2023-03-10",
+//     hora: "09:00",
+//     ubicacion: "Cartagena",
+//     prioridad: 3,
+//     clave: "salud"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 14001",
+//     fecha: "2023-03-10",
+//     hora: "15:20",
+//     ubicacion: "Bogota",
+//     prioridad: 4,
+//     clave: "ambiental"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 28000",
+//     fecha: "2023-04-20",
+//     hora: "11:45",
+//     ubicacion: "Medellin",
+//     prioridad: 1,
+//     clave: "logistica"
+//   },
+//   {
+//     tipo: "Consultoria OEA (Operador Economico Autorizado)",
+//     fecha: "2023-04-20",
+//     hora: "16:00",
+//     ubicacion: "Cartagena",
+//     prioridad: 3,
+//     clave: "aduana"
+//   },
+//   {
+//     tipo: "Consultoria en Seguridad y Salud en el Trabajo",
+//     fecha: "2023-05-05",
+//     hora: "10:15",
+//     ubicacion: "Bogota",
+//     prioridad: 2,
+//     clave: "prevencion"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 14001",
+//     fecha: "2023-05-05",
+//     hora: "14:30",
+//     ubicacion: "Medellin",
+//     prioridad: 3,
+//     clave: "ecologico"
+//   },
+//   {
+//     tipo: "Mediciones Ambientales y Estudios de Tiempos y Movimientos",
+//     fecha: "2023-06-30",
+//     hora: "14:00",
+//     ubicacion: "Cartagena",
+//     prioridad: 4,
+//     clave: "medicion"
+//   },
+//   {
+//     tipo: "Consultoria en Normas ISO 28000",
+//     fecha: "2023-06-30",
+//     hora: "16:45",
+//     ubicacion: "Bogota",
+//     prioridad: 1,
+//     clave: "seguridad"
+//   },
+//   {
+//     tipo: "Consultoria en Seguridad y Salud en el Trabajo",
+//     fecha: "2023-07-08",
+//     hora: "11:30",
+//     ubicacion: "Medellin",
+//     prioridad: 2,
+//     clave: "proteccion"
+//   }
+// ];
